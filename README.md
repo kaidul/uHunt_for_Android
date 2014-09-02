@@ -18,6 +18,7 @@ Coming Soon!
 
 License
 =======
+published under [GNU GENERAL PUBLIC LICENSE Version 3][6].
 
     Copyright (C) 2013 Kaidul Islam
    
@@ -40,3 +41,4 @@ License
  [3]: http://uhunt.felix-halim.net/api
  [4]: http://i.imgur.com/OSUSTLM.png
  [5]: http://uhunt.felix-halim.net/
+ [6]: https://github.com/Kaidul/uHunt_for_Android/blob/master/LICENSE.md
