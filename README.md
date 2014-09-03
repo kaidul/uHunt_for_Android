@@ -16,7 +16,7 @@ I would like If anyone will contribute on building process on Android Studio.
 # License
 published under [GNU General Public License Version 3][6].
 
-    Copyright (C) 2013 Kaidul Islam
+    Copyright (C) 2014 Kaidul Islam
    
     This program is free software: you can redistribute it and/or 
     modify it under the terms of the GNU General Public License as published 
