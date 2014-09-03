@@ -11,7 +11,7 @@ uHunt for Android is the most comprehensive Android app for [uHunt][5] and Compe
 
 # Build Process
 [See Project Wiki Page][7] for instructions on building from Eclipse.
-
+I would like If anyone will contribute on building process on Android Studio.
 
 # License
 published under [GNU General Public License Version 3][6].
