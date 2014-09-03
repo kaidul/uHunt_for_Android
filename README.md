@@ -18,7 +18,7 @@ Coming Soon!
 
 License
 =======
-published under [GNU GENERAL PUBLIC LICENSE Version 3][6].
+published under [GNU General Public License Version 3][6].
 
     Copyright (C) 2013 Kaidul Islam
    
