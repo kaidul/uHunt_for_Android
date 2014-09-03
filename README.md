@@ -10,7 +10,7 @@ uHunt for Android is the most comprehensive Android app for [uHunt][5] and Compe
 [Kaidul Islam][2]
 
 # Build Process
-Coming Soon!
+[See Project Wiki Page][7] for instructions on building from Eclipse.
 
 
 # License
@@ -38,3 +38,4 @@ published under [GNU General Public License Version 3][6].
  [4]: http://i.imgur.com/OSUSTLM.png
  [5]: http://uhunt.felix-halim.net/
  [6]: https://github.com/Kaidul/uHunt_for_Android/blob/master/LICENSE.md
+ [7]: https://github.com/Kaidul/uHunt_for_Android/wiki
