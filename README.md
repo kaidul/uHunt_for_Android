@@ -1,6 +1,6 @@
 # uHunt for Android [![Google Play](http://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=me.kaidul.uhunt)
 
-If you're just looking to install WordPress for Android, you can find it on [Google Play][1]. If you're a developer wanting to contribute, read on.
+If you're just looking to install uHunt for Android, you can find it on [Google Play][1]. If you're a developer wanting to contribute, read on.
 
 uHunt for Android is the most comprehensive Android app for [uHunt][5] and Competitive Programming. This is powered by [uHunt API][3] and has most of the features in the uHunt website and integrates the exercises in the Competitive Programming book so that the user can read the problem statements on the go.
 
