@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * uHunt for Android - The most comprehensive Android app for uHunt and Competitive programming
+ * Copyright (C) 2013 Kaidul Islam
+ * 
+ * This file is part of uHunt for Android.
+
+ * uHunt for Android is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * uHunt for Android is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:background="@color/default_color"/>
+</android.support.v4.widget.DrawerLayout>

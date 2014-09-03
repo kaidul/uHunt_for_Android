@@ -1,0 +1,11 @@
+<resources>
+    <style name="AppBaseTheme" parent="Theme.Uhunt">
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="activatedBackgroundIndicator">@drawable/activated_background</item>
+    </style>
+
+</resources>
