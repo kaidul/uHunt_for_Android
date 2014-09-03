@@ -6,18 +6,14 @@ uHunt for Android is the most comprehensive Android app for [uHunt][5] and Compe
 
 ![Feature Image][4]
 
-Developed By
-============
+# Developed By
 [Kaidul Islam][2]
 
-Build Process
-=============
-
+# Build Process
 Coming Soon!
 
 
-License
-=======
+# License
 published under [GNU General Public License Version 3][6].
 
     Copyright (C) 2013 Kaidul Islam
