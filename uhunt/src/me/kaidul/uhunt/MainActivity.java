@@ -167,6 +167,7 @@ public class MainActivity extends SherlockFragmentActivity {
 		languageCode.put("2", "Java");
 		languageCode.put("3", "C++");
 		languageCode.put("4", "Pascal");
+		languageCode.put("5", "C++11");
 
 		// mapping verdict information with corresponding verdict code
 		verdicts.put("0", new Verdict("In queue", "", "#000000"));

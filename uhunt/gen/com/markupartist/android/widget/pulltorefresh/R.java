@@ -8,18 +8,18 @@ package com.markupartist.android.widget.pulltorefresh;
 
 public final class R {
 	public static final class id {
-		public static final int pull_to_refresh_progress = 0x7f050050;
-		public static final int pull_to_refresh_updated_at = 0x7f050053;
-		public static final int pull_to_refresh_text = 0x7f050052;
-		public static final int pull_to_refresh_image = 0x7f050051;
-		public static final int pull_to_refresh_header = 0x7f05004f;
+		public static final int pull_to_refresh_progress = 0x7f060050;
+		public static final int pull_to_refresh_updated_at = 0x7f060053;
+		public static final int pull_to_refresh_text = 0x7f060052;
+		public static final int pull_to_refresh_image = 0x7f060051;
+		public static final int pull_to_refresh_header = 0x7f06004f;
 	}
 	public static final class string {
-		public static final int pull_to_refresh_refreshing_label = 0x7f0a000d;
-		public static final int app_name = 0x7f0a000a;
-		public static final int pull_to_refresh_pull_label = 0x7f0a000b;
-		public static final int pull_to_refresh_release_label = 0x7f0a000c;
-		public static final int pull_to_refresh_tap_label = 0x7f0a000e;
+		public static final int pull_to_refresh_refreshing_label = 0x7f050003;
+		public static final int app_name = 0x7f050000;
+		public static final int pull_to_refresh_pull_label = 0x7f050001;
+		public static final int pull_to_refresh_release_label = 0x7f050002;
+		public static final int pull_to_refresh_tap_label = 0x7f050004;
 	}
 	public static final class layout {
 		public static final int pull_to_refresh_header = 0x7f030025;

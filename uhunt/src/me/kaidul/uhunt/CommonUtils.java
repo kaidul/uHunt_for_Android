@@ -89,8 +89,8 @@ public class CommonUtils {
 	final static String submissionIsCached = "submissionIsCached";
 	final static String problemListisCached = "problem_is_cached";
 	
-	final static String DEFAULT_USER_ID = "339";
-	final static String DEFAULT_USERNAME = "felix_halim";
+	final static String DEFAULT_USER_ID = "135364";
+	final static String DEFAULT_USERNAME = "Kaidul";
 	final static String ABOUT_HTML = "file:///android_asset/about.html";
 	
 }

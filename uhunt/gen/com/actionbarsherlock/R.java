@@ -8,45 +8,45 @@ package com.actionbarsherlock;
 
 public final class R {
 	public static final class id {
-		public static final int abs__image = 0x7f050018;
-		public static final int showCustom = 0x7f050008;
-		public static final int abs__action_mode_bar_stub = 0x7f050026;
-		public static final int abs__content = 0x7f05001e;
-		public static final int abs__action_bar_container = 0x7f050022;
-		public static final int normal = 0x7f050001;
-		public static final int abs__action_menu_divider = 0x7f05000c;
-		public static final int abs__icon = 0x7f05001b;
-		public static final int homeAsUp = 0x7f050006;
-		public static final int abs__action_bar = 0x7f050023;
-		public static final int abs__default_activity_button = 0x7f050019;
-		public static final int abs__action_mode_bar = 0x7f050027;
-		public static final int abs__imageButton = 0x7f050013;
-		public static final int abs__action_mode_close_button = 0x7f050015;
-		public static final int abs__action_bar_subtitle = 0x7f050012;
-		public static final int abs__activity_chooser_view_content = 0x7f050016;
-		public static final int wrap_content = 0x7f050000;
-		public static final int listMode = 0x7f050002;
-		public static final int disableHome = 0x7f050009;
-		public static final int showTitle = 0x7f050007;
-		public static final int abs__title = 0x7f05001c;
-		public static final int abs__up = 0x7f05000b;
-		public static final int abs__progress_circular = 0x7f05000e;
-		public static final int abs__split_action_bar = 0x7f050025;
-		public static final int useLogo = 0x7f050004;
-		public static final int abs__action_context_bar = 0x7f050024;
-		public static final int tabMode = 0x7f050003;
-		public static final int abs__list_item = 0x7f05001a;
-		public static final int abs__progress_horizontal = 0x7f05000f;
-		public static final int abs__action_bar_title = 0x7f050011;
-		public static final int abs__radio = 0x7f050021;
-		public static final int abs__shortcut = 0x7f050020;
-		public static final int showHome = 0x7f050005;
-		public static final int abs__action_menu_presenter = 0x7f05000d;
-		public static final int abs__textButton = 0x7f050014;
-		public static final int abs__home = 0x7f05000a;
-		public static final int abs__titleDivider = 0x7f05001d;
-		public static final int abs__checkbox = 0x7f05001f;
-		public static final int abs__expand_activities_button = 0x7f050017;
+		public static final int abs__image = 0x7f060018;
+		public static final int showCustom = 0x7f060008;
+		public static final int abs__action_mode_bar_stub = 0x7f060026;
+		public static final int abs__content = 0x7f06001e;
+		public static final int abs__action_bar_container = 0x7f060022;
+		public static final int normal = 0x7f060001;
+		public static final int abs__action_menu_divider = 0x7f06000c;
+		public static final int abs__icon = 0x7f06001b;
+		public static final int homeAsUp = 0x7f060006;
+		public static final int abs__action_bar = 0x7f060023;
+		public static final int abs__default_activity_button = 0x7f060019;
+		public static final int abs__action_mode_bar = 0x7f060027;
+		public static final int abs__imageButton = 0x7f060013;
+		public static final int abs__action_mode_close_button = 0x7f060015;
+		public static final int abs__action_bar_subtitle = 0x7f060012;
+		public static final int abs__activity_chooser_view_content = 0x7f060016;
+		public static final int wrap_content = 0x7f060000;
+		public static final int listMode = 0x7f060002;
+		public static final int disableHome = 0x7f060009;
+		public static final int showTitle = 0x7f060007;
+		public static final int abs__title = 0x7f06001c;
+		public static final int abs__up = 0x7f06000b;
+		public static final int abs__progress_circular = 0x7f06000e;
+		public static final int abs__split_action_bar = 0x7f060025;
+		public static final int useLogo = 0x7f060004;
+		public static final int abs__action_context_bar = 0x7f060024;
+		public static final int tabMode = 0x7f060003;
+		public static final int abs__list_item = 0x7f06001a;
+		public static final int abs__progress_horizontal = 0x7f06000f;
+		public static final int abs__action_bar_title = 0x7f060011;
+		public static final int abs__radio = 0x7f060021;
+		public static final int abs__shortcut = 0x7f060020;
+		public static final int showHome = 0x7f060005;
+		public static final int abs__action_menu_presenter = 0x7f06000d;
+		public static final int abs__textButton = 0x7f060014;
+		public static final int abs__home = 0x7f06000a;
+		public static final int abs__titleDivider = 0x7f06001d;
+		public static final int abs__checkbox = 0x7f06001f;
+		public static final int abs__expand_activities_button = 0x7f060017;
 	}
 	public static final class style {
 		public static final int Widget_Sherlock_Light_ActivityChooserView = 0x7f0b0020;
@@ -139,34 +139,34 @@ public final class R {
 		public static final int TextAppearance_Sherlock_Widget_PopupMenu_Large = 0x7f0b003f;
 	}
 	public static final class integer {
-		public static final int abs__max_action_buttons = 0x7f090000;
+		public static final int abs__max_action_buttons = 0x7f0a0000;
 	}
 	public static final class color {
-		public static final int abs__bright_foreground_inverse_holo_light = 0x7f070007;
-		public static final int abs__primary_text_disable_only_holo_light = 0x7f070015;
-		public static final int abs__holo_blue_light = 0x7f070008;
-		public static final int abs__bright_foreground_holo_dark = 0x7f070002;
-		public static final int abs__bright_foreground_holo_light = 0x7f070003;
-		public static final int abs__primary_text_holo_dark = 0x7f070016;
-		public static final int abs__primary_text_disable_only_holo_dark = 0x7f070014;
-		public static final int abs__bright_foreground_disabled_holo_dark = 0x7f070004;
-		public static final int abs__background_holo_light = 0x7f070001;
-		public static final int abs__bright_foreground_disabled_holo_light = 0x7f070005;
-		public static final int abs__bright_foreground_inverse_holo_dark = 0x7f070006;
-		public static final int abs__primary_text_holo_light = 0x7f070017;
-		public static final int abs__background_holo_dark = 0x7f070000;
+		public static final int abs__bright_foreground_inverse_holo_light = 0x7f080007;
+		public static final int abs__primary_text_disable_only_holo_light = 0x7f080015;
+		public static final int abs__holo_blue_light = 0x7f080008;
+		public static final int abs__bright_foreground_holo_dark = 0x7f080002;
+		public static final int abs__bright_foreground_holo_light = 0x7f080003;
+		public static final int abs__primary_text_holo_dark = 0x7f080016;
+		public static final int abs__primary_text_disable_only_holo_dark = 0x7f080014;
+		public static final int abs__bright_foreground_disabled_holo_dark = 0x7f080004;
+		public static final int abs__background_holo_light = 0x7f080001;
+		public static final int abs__bright_foreground_disabled_holo_light = 0x7f080005;
+		public static final int abs__bright_foreground_inverse_holo_dark = 0x7f080006;
+		public static final int abs__primary_text_holo_light = 0x7f080017;
+		public static final int abs__background_holo_dark = 0x7f080000;
 	}
 	public static final class string {
-		public static final int abs__activitychooserview_choose_application = 0x7f0a0007;
-		public static final int abs__action_bar_up_description = 0x7f0a0001;
-		public static final int abs__share_action_provider_share_with = 0x7f0a0006;
-		public static final int abs__action_menu_overflow_description = 0x7f0a0002;
-		public static final int abs__action_mode_done = 0x7f0a0003;
-		public static final int abs__activity_chooser_view_dialog_title_default = 0x7f0a0005;
-		public static final int abs__shareactionprovider_share_with_application = 0x7f0a0009;
-		public static final int abs__shareactionprovider_share_with = 0x7f0a0008;
-		public static final int abs__action_bar_home_description = 0x7f0a0000;
-		public static final int abs__activity_chooser_view_see_all = 0x7f0a0004;
+		public static final int abs__activitychooserview_choose_application = 0x7f05000c;
+		public static final int abs__action_bar_up_description = 0x7f050006;
+		public static final int abs__share_action_provider_share_with = 0x7f05000b;
+		public static final int abs__action_menu_overflow_description = 0x7f050007;
+		public static final int abs__action_mode_done = 0x7f050008;
+		public static final int abs__activity_chooser_view_dialog_title_default = 0x7f05000a;
+		public static final int abs__shareactionprovider_share_with_application = 0x7f05000e;
+		public static final int abs__shareactionprovider_share_with = 0x7f05000d;
+		public static final int abs__action_bar_home_description = 0x7f050005;
+		public static final int abs__activity_chooser_view_see_all = 0x7f050009;
 	}
 	public static final class layout {
 		public static final int abs__list_menu_item_radio = 0x7f03000f;
@@ -320,7 +320,7 @@ public final class R {
 		public static final int SherlockMenuItem_android_enabled = 1;
 		public static final int SherlockMenuItem_android_onClick = 12;
 		public static final int SherlockMenuItem_android_actionLayout = 14;
-		public static final int[] SherlockSpinner = { 0x010100af, 0x01010175, 0x01010176, 0x0101017b, 0x01010262, 0x010102ac, 0x010102ad, 0x010103ef };
+		public static final int[] SherlockSpinner = { 0x010100af, 0x01010175, 0x01010176, 0x0101017b, 0x01010262, 0x010102ac, 0x010102ad, 0x010103fd };
 		public static final int SherlockTheme_windowActionBarOverlay = 46;
 	}
 	public static final class drawable {
@@ -494,25 +494,25 @@ public final class R {
 		public static final int actionDropDownStyle = 0x7f01002a;
 	}
 	public static final class bool {
-		public static final int abs__config_allowActionMenuItemTextWithIcon = 0x7f060005;
-		public static final int abs__action_bar_expanded_action_views_exclusive = 0x7f060002;
-		public static final int abs__config_showMenuShortcutsWhenKeyboardPresent = 0x7f060003;
-		public static final int abs__action_bar_embed_tabs = 0x7f060000;
-		public static final int abs__split_action_bar_is_narrow = 0x7f060001;
-		public static final int abs__config_actionMenuItemAllCaps = 0x7f060004;
+		public static final int abs__config_allowActionMenuItemTextWithIcon = 0x7f070005;
+		public static final int abs__action_bar_expanded_action_views_exclusive = 0x7f070002;
+		public static final int abs__config_showMenuShortcutsWhenKeyboardPresent = 0x7f070003;
+		public static final int abs__action_bar_embed_tabs = 0x7f070000;
+		public static final int abs__split_action_bar_is_narrow = 0x7f070001;
+		public static final int abs__config_actionMenuItemAllCaps = 0x7f070004;
 	}
 	public static final class dimen {
-		public static final int abs__config_prefDialogWidth = 0x7f080000;
-		public static final int abs__action_bar_subtitle_text_size = 0x7f080004;
-		public static final int abs__dialog_min_width_minor = 0x7f08000a;
-		public static final int abs__dialog_min_width_major = 0x7f080009;
-		public static final int abs__action_bar_icon_vertical_padding = 0x7f080002;
-		public static final int abs__action_button_min_width = 0x7f080007;
-		public static final int abs__action_bar_subtitle_top_margin = 0x7f080005;
-		public static final int abs__alert_dialog_title_height = 0x7f080008;
-		public static final int abs__action_bar_subtitle_bottom_margin = 0x7f080006;
-		public static final int action_button_min_width = 0x7f08000b;
-		public static final int abs__action_bar_title_text_size = 0x7f080003;
-		public static final int abs__action_bar_default_height = 0x7f080001;
+		public static final int abs__config_prefDialogWidth = 0x7f090000;
+		public static final int abs__action_bar_subtitle_text_size = 0x7f090004;
+		public static final int abs__dialog_min_width_minor = 0x7f09000a;
+		public static final int abs__dialog_min_width_major = 0x7f090009;
+		public static final int abs__action_bar_icon_vertical_padding = 0x7f090002;
+		public static final int abs__action_button_min_width = 0x7f090007;
+		public static final int abs__action_bar_subtitle_top_margin = 0x7f090005;
+		public static final int abs__alert_dialog_title_height = 0x7f090008;
+		public static final int abs__action_bar_subtitle_bottom_margin = 0x7f090006;
+		public static final int action_button_min_width = 0x7f09000b;
+		public static final int abs__action_bar_title_text_size = 0x7f090003;
+		public static final int abs__action_bar_default_height = 0x7f090001;
 	}
 }
