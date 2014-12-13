@@ -31,6 +31,9 @@ published under [GNU General Public License Version 3][6].
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+Feel free to clone, hack away, suggest patches, etc. I can be reached 
+via email: kaidulislam90@gmail.com
+
 
  [1]: https://play.google.com/store/apps/details?id=me.kaidul.uhunt
  [2]: http://kaidul.com
