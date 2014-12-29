@@ -26,6 +26,7 @@ import com.actionbarsherlock.view.MenuItem;
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
@@ -96,6 +97,11 @@ public class AboutActivity extends SherlockActivity {
 		}
 		switch (item.getItemId()) {
 		case R.id.rate:
+			try {
+                appID = this.getPackageManager().getPackageInfo(this.getPackageName(), 0).packageName;
+            } catch (NameNotFoundException e) {
+
+            }
 			Intent intent = new Intent(Intent.ACTION_VIEW);
 			intent.setData(Uri.parse("market://details?id=" + appID));
 			if (StartActivity(intent) == false) {
