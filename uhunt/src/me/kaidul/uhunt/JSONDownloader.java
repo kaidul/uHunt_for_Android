@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -44,7 +45,12 @@ public class JSONDownloader {
 
 		try {
 			DefaultHttpClient httpClient = new DefaultHttpClient();
-			HttpPost httpPost = new HttpPost(url);
+			// Encoding Url param
+			int lastIndex = url.lastIndexOf('/');
+			String param = url.substring(lastIndex);
+			url = url.substring(0, lastIndex);
+			String encodedParam = URLEncoder.encode(param, "UTF-8");
+			HttpPost httpPost = new HttpPost(url + encodedParam);
 			HttpResponse httpResponse = httpClient.execute(httpPost);
 			HttpEntity httpEntity = httpResponse.getEntity();
 			is = httpEntity.getContent();
