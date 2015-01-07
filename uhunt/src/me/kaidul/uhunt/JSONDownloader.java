@@ -45,12 +45,7 @@ public class JSONDownloader {
 
 		try {
 			DefaultHttpClient httpClient = new DefaultHttpClient();
-			// Encoding Url param
-			int lastIndex = url.lastIndexOf('/');
-			String param = url.substring(lastIndex);
-			url = url.substring(0, lastIndex);
-			String encodedParam = URLEncoder.encode(param, "UTF-8");
-			HttpPost httpPost = new HttpPost(url + encodedParam);
+			HttpPost httpPost = new HttpPost(url);
 			HttpResponse httpResponse = httpClient.execute(httpPost);
 			HttpEntity httpEntity = httpResponse.getEntity();
 			is = httpEntity.getContent();
