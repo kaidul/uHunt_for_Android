@@ -45,6 +45,7 @@ import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -55,6 +56,7 @@ import android.content.SharedPreferences.Editor;
 import android.content.res.Configuration;
 import android.graphics.Point;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
@@ -217,6 +219,7 @@ public class MainActivity extends SherlockFragmentActivity {
 			// in case of no connection
 			if (hasConnection == false) {
 				networkAvailabilityNotice(this);
+				//finish();
 				return;
 			}
 			// next time it is no longer first run
@@ -235,12 +238,14 @@ public class MainActivity extends SherlockFragmentActivity {
 				if (okay == false) {
 					new AlertDialog.Builder(this)
 							.setTitle("Error!")
-							.setMessage("")
+							.setMessage("Data didn't cached properly, Check your internet connection")
+							.setCancelable(false)
 							.setNeutralButton("OK",
 									new DialogInterface.OnClickListener() {
 										public void onClick(
 												DialogInterface dlg, int sumthin) {
 											dlg.cancel();
+											finish();
 										}
 									}).show();
 				} else { // if everything is okay, start submissionTask
@@ -273,6 +278,7 @@ public class MainActivity extends SherlockFragmentActivity {
 				.setTitle("Internet Unavailable")
 				.setMessage(
 						"Please check your network connection or try again later!")
+				.setCancelable(false)
 				.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dlg, int sumthin) {
 						dlg.cancel();
@@ -528,6 +534,7 @@ public class MainActivity extends SherlockFragmentActivity {
 		startActivity(intent);
 	}
 
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void selectItem(int position) {
 		currentPosition = position;
 		Fragment fragmentName = null;
@@ -563,7 +570,11 @@ public class MainActivity extends SherlockFragmentActivity {
 			break;
 		}
 		replaceFragment(fragmentName, position);
-		invalidateOptionsMenu();
+		if (Build.VERSION.SDK_INT < 11) {
+			supportInvalidateOptionsMenu();
+		} else {
+			invalidateOptionsMenu();
+		}
 	}
 
 	private void replaceFragment(Fragment fragment, int position) {
