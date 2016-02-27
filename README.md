@@ -1,4 +1,4 @@
-# uHunt for Android [![Google Play](http://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=me.kaidul.uhunt)
+# uHunt for Android
 
 If you're just looking to install uHunt for Android, you can find it on [Google Play][1]. If you're a developer wanting to contribute, read on.
 
