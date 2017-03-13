@@ -1,9 +1,5 @@
 # uHunt for Android
 
-<i><strong>
-Despite of lots of feature requests, I no longer maintain this project for personal reason. If anyone want to contribute, please contact me - kaidulislam90 at gmail dot com
-</strong></i>
-
 If you're just looking to install uHunt for Android, you can find it on [Google Play][1]. If you're a developer wanting to contribute, read on.
 
 uHunt for Android is the most comprehensive Android app for [uHunt][5] and Competitive Programming. This is powered by [uHunt API][3] and has most of the features in the uHunt website and integrates the exercises in the Competitive Programming book so that the user can read the problem statements on the go.
