@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
@@ -34,4 +36,8 @@ dependencies {
     implementation files('libs/achartengine-1.1.0.jar')
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
     implementation 'com.github.johnkil.android-progressfragment:progressfragment:1.4.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

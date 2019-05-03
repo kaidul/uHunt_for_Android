@@ -21,8 +21,8 @@ package me.kaidul.uhunt;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.MenuItem;
 
 public class ProblemsActivity extends FragmentActivity implements
