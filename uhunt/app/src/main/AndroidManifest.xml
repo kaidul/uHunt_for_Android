@@ -29,10 +29,18 @@
         <activity
             android:name=".ProblemsActivity"
             android:label="@string/browse_problems" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".AboutActivity"
-            android:label="@string/about_uhunt" >
+            android:label="@string/about_uhunt">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
         <activity
             android:name=".FeedbackFormActivity"

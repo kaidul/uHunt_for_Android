@@ -27,5 +27,7 @@
     <string name="tried_but_failed">Tried but not yet solved</string>
     <string name="feedback_form_hints">Type your message here</string>
     <string name="btn_txt">Send Feedback</string>
-    
+    <string name="url_market_app">market://details?id=</string>
+    <string name="url_playstore_web">http://play.google.com/store/apps/details?id=</string>
+
 </resources>

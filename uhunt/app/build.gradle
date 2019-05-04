@@ -35,8 +35,24 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation files('libs/achartengine-1.1.0.jar')
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+
     implementation 'com.github.johnkil.android-progressfragment:progressfragment:1.4.0'
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+//    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
+//    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
+
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidxConstraintVersion"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.androidxArchVersion"
+    androidTestImplementation ('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 }
 repositories {
     mavenCentral()

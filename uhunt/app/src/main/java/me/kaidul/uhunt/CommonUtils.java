@@ -91,6 +91,6 @@ public class CommonUtils {
 	
 	final static String DEFAULT_USER_ID = "135364";
 	final static String DEFAULT_USERNAME = "Kaidul";
-	final static String ABOUT_HTML = "file:///android_asset/about.html";
+	public final static String ABOUT_HTML = "file:///android_asset/about.html";
 	
 }
