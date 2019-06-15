@@ -31,8 +31,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <!-- Toolbar layout -->
-        <include
-            layout="@layout/toolbar_main"/>
+        <include layout="@layout/toolbar_main" />
 
         <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
         <fragment

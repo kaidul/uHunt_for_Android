@@ -7,26 +7,26 @@
     tools:context=".login.LoginActivity">
 
     <!-- Toolbar layout -->
-    <include
-        layout="@layout/toolbar_main"/>
+    <include layout="@layout/toolbar_main" />
 
     <LinearLayout
         android:id="@+id/login_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <EditText
             android:id="@+id/et_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="@string/username" />
+            android:hint="@string/username"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btn_login"
@@ -38,16 +38,15 @@
     </LinearLayout>
 
 
-
     <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/progress_circular"
+        style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.ProgressBar"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

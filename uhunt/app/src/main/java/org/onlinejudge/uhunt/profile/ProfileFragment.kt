@@ -1,49 +1,42 @@
+/*
+ * uHunt for Android - The most comprehensive Android app for uHunt and Competitive programming
+ *   Copyright (C) 2018 Kaidul Islam, Esraa Ibrahim
+ *
+ *   This file is part of uHunt for Android.
+ *
+ *   uHunt for Android is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   uHunt for Android is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package org.onlinejudge.uhunt.profile
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.fragment_profile.*
-
 import org.onlinejudge.uhunt.R
 import org.onlinejudge.uhunt.data.model.Verdict
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [ProfileFragment.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [ProfileFragment.newInstance] factory method to
- * create an instance of this fragment.
- *
- */
 class ProfileFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     private lateinit var profileViewModel: ProfileViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
         val fragmentView = inflater.inflate(R.layout.fragment_profile, container, false)
         profileViewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
         profileViewModel.getCurrentLoggedInUserSubmissions().observe(this, Observer { userSubmission ->
@@ -76,25 +69,5 @@ class ProfileFragment : Fragment() {
             tried_but_failure_list.text = triedButNotSolvedProblemsList?.joinToString(separator = " ") { it?.get(1).toString() }
         })
         return fragmentView
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ProfileFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-                ProfileFragment().apply {
-                    arguments = Bundle().apply {
-                        putString(ARG_PARAM1, param1)
-                        putString(ARG_PARAM2, param2)
-                    }
-                }
     }
 }

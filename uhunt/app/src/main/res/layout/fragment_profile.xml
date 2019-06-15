@@ -57,9 +57,9 @@
             android:paddingEnd="@dimen/padding_medium"
             android:paddingRight="@dimen/padding_medium"
             android:paddingBottom="@dimen/padding_small"
-            tools:text="Tried but not yet solved: 12"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:text="Tried but not yet solved: 12" />
 
         <TextView
             android:id="@+id/tried_but_failure_list"

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
  * uHunt for Android - The most comprehensive Android app for uHunt and Competitive programming
  * Copyright (C) 2013 Kaidul Islam
@@ -20,8 +19,8 @@
  * along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
  */
  -->
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/rate"
         android:orderInCategory="100"

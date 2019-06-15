@@ -1,28 +1,26 @@
 /*
  * uHunt for Android - The most comprehensive Android app for uHunt and Competitive programming
- * Copyright (C) 2013 Kaidul Islam
+ *   Copyright (C) 2018 Kaidul Islam, Esraa Ibrahim
  *
- * This file is part of uHunt for Android.
-
- * uHunt for Android is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
-
- * uHunt for Android is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
-
- * You should have received a copy of the GNU General Public License
- * along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
+ *   This file is part of uHunt for Android.
+ *
+ *   uHunt for Android is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   uHunt for Android is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 package org.onlinejudge.uhunt
 
 object CommonUtils {
-
-    const val isDebuggable = false
-
     const val BASE_URL = "https://uhunt.onlinejudge.org/api/"
     const val USER_ID_TO_USERNAME_URL = "uname2uid/"
     const val USER_NAME_PARAM = "uname"
@@ -52,12 +50,10 @@ object CommonUtils {
     const val KEY_LANGUAGE_ID = "lan"
     const val KEY_SUBMISSION_RANK = "rank"
     const val KEY_MESSAGE = "msg"
-
     const val LAST_SAVED = "last_saved"
     const val KEY_RANK_USERNAME = "username"
     const val KEY_RANK_AC = "ac"
     const val KEY_RANK_NOS = "nos"
-
     const val PROBLEM_DATABASE = "problem_database.db"
     const val PROBLEM_DATABASE_VERSION = 1
     const val PROBLEM_TABLE = "problem_table"
@@ -86,13 +82,10 @@ object CommonUtils {
     val alias = arrayOf("90", "80", "70", "50", "60", "30", "40", "10")
     val aliases = arrayOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
     const val KEY_BOOK_NAME = "competitive_programming_edition_3.txt"
-
     const val ALL_VERDICT_TOGETHER = "all_verdicts_together"
     const val submissionIsCached = "submissionIsCached"
     const val problemListisCached = "problem_is_cached"
-
     const val DEFAULT_USER_ID = "135364"
     const val DEFAULT_USERNAME = "Kaidul"
     const val ABOUT_HTML = "file:///android_asset/about.html"
-
 }

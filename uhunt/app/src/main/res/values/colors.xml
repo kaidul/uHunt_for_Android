@@ -2,7 +2,7 @@
 <resources>
     <color name="default_color">#111</color>
     <color name="uva_color">#c31756</color>
-    
+
     <color name="ac">#00AA00</color>
     <color name="pe">#666600</color>
     <color name="wa">#FF0000</color>
