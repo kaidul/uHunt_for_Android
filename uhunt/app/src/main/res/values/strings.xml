@@ -19,15 +19,23 @@
         <item>Problem Statistics</item>
     </string-array>
     <string name="solved_problem_level">Solved Problem Level</string>
-	<string name="about_uhunt">About uHunt</string>
-	<string name="settings">Settings</string>
-	<string name="feedback">Feedback</string>
+    <string name="about_uhunt">About uHunt</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
     <string name="empty">No Data</string>
     <string name="browse_problems">Browse Problems</string>
-    <string name="tried_but_failed">Tried but not yet solved</string>
     <string name="feedback_form_hints">Type your message here</string>
     <string name="btn_txt">Send Feedback</string>
     <string name="url_market_app">market://details?id=</string>
     <string name="url_playstore_web">http://play.google.com/store/apps/details?id=</string>
+
+
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="fragment_profile">Profile</string>
+    <string name="activity_login_title">Login</string>
+    <string name="rate_this">Rate This</string>
+    <string name="solved_and_submission_text">Solved: %d ,Submissions: %d</string>
+    <string name="tried_but_failed_text">Tried but not yet solved: %d</string>
 
 </resources>

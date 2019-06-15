@@ -20,10 +20,11 @@
  * along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
  */
  -->
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
         android:id="@+id/rate"
         android:orderInCategory="100"
-        android:showAsAction="always"
-        android:title="Rate This"/>
+        android:title="@string/rate_this"
+        app:showAsAction="always" />
 </menu>

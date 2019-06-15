@@ -7,9 +7,11 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "me.kaidul.uhunt"
+        applicationId "org.onlinejudge.uhunt"
         minSdkVersion 14
         targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
@@ -34,9 +36,16 @@ android {
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation files('libs/achartengine-1.1.0.jar')
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha05'
 
-    implementation 'com.github.johnkil.android-progressfragment:progressfragment:1.4.0'
+    implementation "com.google.android.material:material:1.0.0"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.archNavVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.archNavVersion"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.reftrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.reftrofitVersion"
 
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
@@ -47,10 +56,10 @@ dependencies {
 //    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
 
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidxConstraintVersion"
-
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.androidxArchVersion"
-    androidTestImplementation ('androidx.test.espresso:espresso-core:3.1.0', {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 }
