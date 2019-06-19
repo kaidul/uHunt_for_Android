@@ -24,6 +24,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -97,6 +98,16 @@ public class ProblemDetailsFragment extends SherlockProgressFragment {
 				if (progress >= 100) {
 					setContentShown(true);
 				}
+			}
+		});
+		
+		// if the problem file is pdf it will be opened by this way
+		mWebView.setDownloadListener(new DownloadListener() {
+			@Override
+			public void onDownloadStart(String url, String userAgent,
+					String contentDisposition, String mimetype,
+					long contentLength) {
+				mWebView.loadUrl("http://docs.google.com/gview?embedded=true&url=" + url);
 			}
 		});
 		mWebView.loadUrl(mCurrentURL);

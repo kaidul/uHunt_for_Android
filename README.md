@@ -1,4 +1,4 @@
-# uHunt for Android [![Google Play](http://developer.android.com/images/brand/en_app_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=me.kaidul.uhunt)
+# uHunt for Android
 
 If you're just looking to install uHunt for Android, you can find it on [Google Play][1]. If you're a developer wanting to contribute, read on.
 
@@ -6,8 +6,11 @@ uHunt for Android is the most comprehensive Android app for [uHunt][5] and Compe
 
 ![Feature Image][4]
 
-# Developed By
+# Contributors
 [Kaidul Islam][2]
+
+[Esraa Ibrahim][8]
+
 
 # Build Process
 [See Project Wiki Page][7] for instructions on building from Eclipse and Android Studio.
@@ -41,3 +44,4 @@ via email: kaidulislam90@gmail.com
  [5]: http://uhunt.felix-halim.net/
  [6]: https://github.com/Kaidul/uHunt_for_Android/blob/master/LICENSE.md
  [7]: https://github.com/Kaidul/uHunt_for_Android/wiki
+ [8]: https://github.com/esraa-ibrahim
