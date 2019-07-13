@@ -18,38 +18,39 @@
  *   along with uHunt for Android.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.onlinejudge.uhunt
+package org.onlinejudge.uhunt.about
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NavUtils
-import kotlinx.android.synthetic.main.about_webview.*
+import android.view.*
+import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_about.*
+import org.onlinejudge.uhunt.CommonUtils
+import org.onlinejudge.uhunt.R
 
-class AboutActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.about_webview)
-        supportActionBar?.setHomeButtonEnabled(true)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+class AboutFragment : Fragment() {
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_about, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        setHasOptionsMenu(true)
         about_web_view.loadUrl(CommonUtils.ABOUT_HTML)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.rate_menu, menu)
-        return true
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.rate_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            android.R.id.home -> {
-                NavUtils.navigateUpFromSameTask(this)
-            }
             R.id.rate -> {
                 openAppInPlayStoreForRating()
             }
@@ -58,7 +59,7 @@ class AboutActivity : AppCompatActivity() {
     }
 
     private fun openAppInPlayStoreForRating() {
-        val uri = Uri.parse(getString(R.string.url_market_app) + packageName)
+        val uri = Uri.parse(getString(R.string.url_market_app) + activity?.packageName)
         val goToMarketIntent = Intent(Intent.ACTION_VIEW, uri)
 
         var flags = Intent.FLAG_ACTIVITY_NO_HISTORY or Intent.FLAG_ACTIVITY_MULTIPLE_TASK
@@ -73,7 +74,7 @@ class AboutActivity : AppCompatActivity() {
             startActivity(goToMarketIntent)
         } catch (e: ActivityNotFoundException) {
             val intent = Intent(Intent.ACTION_VIEW,
-                    Uri.parse(getString(R.string.url_playstore_web) + packageName))
+                    Uri.parse(getString(R.string.url_playstore_web) + activity?.packageName))
 
             startActivity(intent)
         }
