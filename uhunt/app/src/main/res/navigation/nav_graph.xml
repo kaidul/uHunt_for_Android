@@ -10,4 +10,9 @@
         android:name="org.onlinejudge.uhunt.profile.ProfileFragment"
         android:label="@string/fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/about_dest"
+        android:name="org.onlinejudge.uhunt.about.AboutFragment"
+        android:label="@string/fragment_about"
+        tools:layout="@layout/fragment_about"/>
 </navigation>

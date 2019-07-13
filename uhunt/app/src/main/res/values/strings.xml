@@ -38,4 +38,8 @@
     <string name="solved_and_submission_text">Solved: %d ,Submissions: %d</string>
     <string name="tried_but_failed_text">Tried but not yet solved: %d</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_about">About</string>
+
 </resources>
