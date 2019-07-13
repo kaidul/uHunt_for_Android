@@ -25,13 +25,13 @@ import android.content.SharedPreferences
 
 import org.onlinejudge.uhunt.CommonUtils
 
-class UvaSharedPreferences(context: Context) {
-    private var uvaSharedPref: SharedPreferences = newInstance(context)
+object UvaSharedPreferences {
 
-    companion object {
-        fun newInstance(context: Context): SharedPreferences {
-            return context.getSharedPreferences(CommonUtils.PREFERENCE_NAME, Context.MODE_PRIVATE)
-        }
+    private lateinit var uvaSharedPref: SharedPreferences
+
+    fun newInstance(context: Context): UvaSharedPreferences {
+        uvaSharedPref = context.getSharedPreferences(CommonUtils.PREFERENCE_NAME, Context.MODE_PRIVATE)
+        return UvaSharedPreferences
     }
 
     var userId: String?

@@ -25,18 +25,12 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiEndPointClient {
-    @Volatile
-    private lateinit var instance: ApiEndPointInterface
 
     fun newInstance(): ApiEndPointInterface {
-        synchronized(ApiEndPointClient::class.java) {
-            val retrofit = Retrofit.Builder()
-                    .baseUrl(CommonUtils.BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build()
-
-            instance = retrofit.create(ApiEndPointInterface::class.java)
-        }
-        return instance
+        val retrofit = Retrofit.Builder()
+                .baseUrl(CommonUtils.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+        return retrofit.create(ApiEndPointInterface::class.java)
     }
 }

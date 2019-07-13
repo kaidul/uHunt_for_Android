@@ -31,20 +31,15 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class UvaRepository private constructor(application: Application) {
-    private val apiEndPointInterface: ApiEndPointInterface = ApiEndPointClient.newInstance()
-    private val uvaSharedPreferences: UvaSharedPreferences = UvaSharedPreferences(application)
+object UvaRepository {
 
-    companion object {
-        @Volatile
-        private lateinit var instance: UvaRepository
+    private lateinit var apiEndPointInterface: ApiEndPointInterface
+    private lateinit var uvaSharedPreferences: UvaSharedPreferences
 
-        fun newInstance(application: Application): UvaRepository {
-            synchronized(UvaRepository::class.java) {
-                instance = UvaRepository(application)
-            }
-            return instance
-        }
+    fun newInstance(application: Application): UvaRepository {
+        apiEndPointInterface = ApiEndPointClient.newInstance()
+        uvaSharedPreferences = UvaSharedPreferences.newInstance(application)
+        return UvaRepository
     }
 
     var userIdSharedPrefs: String?
