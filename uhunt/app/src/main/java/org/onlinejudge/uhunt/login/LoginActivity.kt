@@ -22,6 +22,7 @@ package org.onlinejudge.uhunt.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import androidx.appcompat.app.AppCompatActivity
@@ -47,14 +48,18 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
 
         btn_login.setOnClickListener {
-            showLoadingIndicatorAndHideView()
-            val username = et_username.text.toString()
-            loginViewModel.login(username).observe(this, Observer {
-                hideLoadingIndicator()
-                val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            })
+            val username = et_username.text.toString().trim()
+            if (TextUtils.isEmpty(username)) {
+                til_username.error = getString(R.string.msg_error_username)
+            } else {
+                showLoadingIndicatorAndHideView()
+                loginViewModel.login(username).observe(this, Observer {
+                    hideLoadingIndicator()
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                })
+            }
         }
     }
 
