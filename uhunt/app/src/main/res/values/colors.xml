@@ -2,6 +2,7 @@
 <resources>
     <color name="default_color">#111</color>
     <color name="uva_color">#c31756</color>
+    <color name="colorPrimary">#111111</color>
 
     <color name="ac">#00AA00</color>
     <color name="pe">#666600</color>
@@ -11,6 +12,5 @@
     <color name="ce">#AAAA00</color>
     <color name="re">#00AAAA</color>
     <color name="ot">#000000</color>
-    <color name="colorPrimary">#111111</color>
     <color name="white">#ffffff</color>
 </resources>

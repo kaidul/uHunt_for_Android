@@ -26,6 +26,7 @@ object CommonUtils {
     const val USER_NAME_PARAM = "uname"
     const val ALL_SUBMISSIONS_URL = "subs-user/"
     const val USER_ID_PARAM = "user-id"
+    const val CP_BOOK_PROBLEMS_URL = "cpbook/3"
     const val USER_SUBMISSION_URL = BASE_URL + "subs-user-last/"
     const val LIVE_SUBMISSION_URL = BASE_URL + "poll/"
     const val RANKLIST_URL = BASE_URL + "ranklist/"

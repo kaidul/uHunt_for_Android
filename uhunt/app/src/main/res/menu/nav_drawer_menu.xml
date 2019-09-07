@@ -5,6 +5,10 @@
         android:title="@string/fragment_profile" />
 
     <item
+        android:id="@id/cpbook_dest"
+        android:title="@string/fragment_cpbook" />
+
+    <item
         android:id="@id/about_dest"
         android:title="@string/fragment_about" />
 

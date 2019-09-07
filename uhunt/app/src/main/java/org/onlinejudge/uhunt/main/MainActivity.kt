@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 .findFragmentById(R.id.nav_host_fragment) as NavHostFragment? ?: return
         val drawerLayout: DrawerLayout? = findViewById(R.id.drawer_layout)
         appBarConfiguration = AppBarConfiguration(
-                setOf(R.id.profile_dest, R.id.about_dest),
+                setOf(R.id.profile_dest, R.id.about_dest, R.id.cpbook_dest),
                 drawerLayout)
 
         val navController = host.navController

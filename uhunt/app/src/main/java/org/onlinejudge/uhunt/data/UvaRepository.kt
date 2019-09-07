@@ -25,6 +25,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import org.onlinejudge.uhunt.data.network.ApiEndPointClient
 import org.onlinejudge.uhunt.data.network.ApiEndPointInterface
+import org.onlinejudge.uhunt.data.network.model.ProblemCategory
 import org.onlinejudge.uhunt.data.network.model.UserSubmission
 import org.onlinejudge.uhunt.data.sharedprefs.UvaSharedPreferences
 import retrofit2.Call
@@ -62,7 +63,7 @@ object UvaRepository {
             }
 
             override fun onFailure(call: Call<String>, t: Throwable) {
-
+                TODO("not implemented")
             }
         })
         return userId
@@ -76,10 +77,24 @@ object UvaRepository {
             }
 
             override fun onFailure(call: Call<UserSubmission>, t: Throwable) {
-
+                TODO("not implemented")
             }
 
         })
         return userSubmissions
+    }
+
+    fun getCPBookProblems(): LiveData<List<ProblemCategory>> {
+        val problemCategoryList = MutableLiveData<List<ProblemCategory>>()
+        apiEndPointInterface.getCPBookProblems().enqueue(object : Callback<List<ProblemCategory>> {
+            override fun onResponse(call: Call<List<ProblemCategory>>, response: Response<List<ProblemCategory>>) {
+                problemCategoryList.value = response.body()
+            }
+
+            override fun onFailure(call: Call<List<ProblemCategory>>, t: Throwable) {
+                TODO("not implemented")
+            }
+        })
+        return problemCategoryList
     }
 }

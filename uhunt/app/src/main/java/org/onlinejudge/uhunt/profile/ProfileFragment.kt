@@ -37,7 +37,11 @@ class ProfileFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val fragmentView = inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
         profileViewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
         profileViewModel.getCurrentLoggedInUserSubmissions().observe(this, Observer { userSubmission ->
             name_and_username.text = String.format("%s (%s)", userSubmission.username, userSubmission.name)
@@ -68,6 +72,5 @@ class ProfileFragment : Fragment() {
             // TODO ("Show Problem Number Instead Of Problem ID")
             tried_but_failure_list.text = triedButNotSolvedProblemsList?.joinToString(separator = " ") { it?.get(1).toString() }
         })
-        return fragmentView
     }
 }

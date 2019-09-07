@@ -11,6 +11,11 @@
         android:label="@string/fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
+        android:id="@+id/cpbook_dest"
+        android:name="org.onlinejudge.uhunt.cpbook.CPBookFragment"
+        android:label="@string/fragment_cpbook"
+        tools:layout="@layout/fragment_cpbook" />
+    <fragment
         android:id="@+id/about_dest"
         android:name="org.onlinejudge.uhunt.about.AboutFragment"
         android:label="@string/fragment_about"
