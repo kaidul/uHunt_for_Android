@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tabIndicatorColor="@color/uva_color"
         style="@style/Widget.MaterialComponents.TabLayout.Colored"
-        app:tabIconTint="@null">
+        app:tabIconTintMode="multiply">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
