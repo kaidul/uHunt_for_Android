@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ uHunt for Android - The most comprehensive Android app for uHunt and Competitive programming
   ~   Copyright (C) 2018 Kaidul Islam, Esraa Ibrahim
   ~
@@ -20,35 +19,33 @@
   -->
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".cpbook.CPBookFragment">
 
-    <com.google.android.material.tabs.TabLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tabIndicatorColor="@color/uva_color"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mainCategoriesTabLayout"
         style="@style/Widget.MaterialComponents.TabLayout.Colored"
-        app:tabIconTintMode="multiply">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIconTintMode="multiply"
+        app:tabIndicatorColor="@color/uva_color"/>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/basics_icon"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/tabsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    </LinearLayout>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/intermediate_icon" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/advanced_icon" />
-    </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
