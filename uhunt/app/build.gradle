@@ -14,6 +14,15 @@ android {
         versionName "1.0"
     }
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -34,14 +43,17 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.code.gson:gson:2.8.6'
     implementation files('libs/achartengine-1.1.0.jar')
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha05'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha01'
 
-    implementation "com.google.android.material:material:1.0.0"
+    implementation "com.google.android.material:material:1.2.0-alpha03"
 
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.archNavVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.archNavVersion"
+
+    // View Pager
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$rootProject.reftrofitVersion"
@@ -57,9 +69,11 @@ dependencies {
 
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.androidxConstraintVersion"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.androidxArchVersion"
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.2.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 }

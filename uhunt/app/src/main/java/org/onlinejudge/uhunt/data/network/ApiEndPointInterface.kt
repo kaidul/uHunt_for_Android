@@ -21,6 +21,7 @@
 package org.onlinejudge.uhunt.data.network
 
 import org.onlinejudge.uhunt.CommonUtils
+import org.onlinejudge.uhunt.data.network.model.ProblemCategory
 import org.onlinejudge.uhunt.data.network.model.UserSubmission
 import retrofit2.Call
 import retrofit2.http.GET
@@ -32,4 +33,7 @@ interface ApiEndPointInterface {
 
     @GET("${CommonUtils.ALL_SUBMISSIONS_URL}{${CommonUtils.USER_ID_PARAM}}")
     fun getUserSubmissions(@Path(CommonUtils.USER_ID_PARAM) userId: String): Call<UserSubmission>
+
+    @GET(CommonUtils.CP_BOOK_PROBLEMS_URL)
+    fun getCPBookProblems(): Call<List<ProblemCategory>>
 }
