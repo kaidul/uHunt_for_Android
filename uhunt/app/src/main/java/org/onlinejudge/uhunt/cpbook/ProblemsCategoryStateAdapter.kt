@@ -22,13 +22,18 @@ package org.onlinejudge.uhunt.cpbook
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import org.onlinejudge.uhunt.data.network.model.ProblemCategory
 
-class ProblemsCategoryStateAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
+class ProblemsCategoryStateAdapter(fragment: Fragment, private val problemsCategory: ArrayList<ProblemCategory>? = null) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
         return 3
     }
 
     override fun createFragment(position: Int): Fragment {
-        return ProblemsCategoryTabFragment.newInstance()
+        return when(position) {
+            0 -> ProblemsCategoryTabFragment.newInstance(ArrayList(problemsCategory?.subList(0, 3)))
+            1 -> ProblemsCategoryTabFragment.newInstance(ArrayList(problemsCategory?.subList(3, 6)))
+            else -> ProblemsCategoryTabFragment.newInstance(ArrayList(problemsCategory?.subList(6, 9)))
+        }
     }
 }

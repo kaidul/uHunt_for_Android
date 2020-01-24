@@ -63,7 +63,7 @@ object UvaRepository {
             }
 
             override fun onFailure(call: Call<String>, t: Throwable) {
-                TODO("not implemented")
+                // TODO("not implemented")
             }
         })
         return userId
@@ -77,21 +77,21 @@ object UvaRepository {
             }
 
             override fun onFailure(call: Call<UserSubmission>, t: Throwable) {
-                TODO("not implemented")
+                // TODO("not implemented")
             }
 
         })
         return userSubmissions
     }
 
-    fun getCPBookProblems(): LiveData<List<ProblemCategory>> {
-        val problemCategoryList = MutableLiveData<List<ProblemCategory>>()
-        apiEndPointInterface.getCPBookProblems().enqueue(object : Callback<List<ProblemCategory>> {
-            override fun onResponse(call: Call<List<ProblemCategory>>, response: Response<List<ProblemCategory>>) {
+    fun getCPBookProblems(): LiveData<ArrayList<ProblemCategory>> {
+        val problemCategoryList = MutableLiveData<ArrayList<ProblemCategory>>()
+        apiEndPointInterface.getCPBookProblems().enqueue(object : Callback<ArrayList<ProblemCategory>> {
+            override fun onResponse(call: Call<ArrayList<ProblemCategory>>, response: Response<ArrayList<ProblemCategory>>) {
                 problemCategoryList.value = response.body()
             }
 
-            override fun onFailure(call: Call<List<ProblemCategory>>, t: Throwable) {
+            override fun onFailure(call: Call<ArrayList<ProblemCategory>>, t: Throwable) {
                 TODO("not implemented")
             }
         })
