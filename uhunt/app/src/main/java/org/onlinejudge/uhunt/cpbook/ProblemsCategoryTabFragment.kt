@@ -26,13 +26,38 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_problems_category_tab.*
 
 import org.onlinejudge.uhunt.R
+import org.onlinejudge.uhunt.data.network.model.ProblemCategory
 
 class ProblemsCategoryTabFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ProblemsCategoryTabFragment()
+
+        private const val ARG_PROBLEMS_CATEGORY = "PROBLEMS_CATEGORY"
+
+        fun newInstance(problemsCategory: ArrayList<ProblemCategory>?): ProblemsCategoryTabFragment {
+            val problemsCategoryTabFragment = ProblemsCategoryTabFragment()
+            if (problemsCategory != null) {
+                val bundle = Bundle()
+                bundle.putSerializable(ARG_PROBLEMS_CATEGORY, problemsCategory)
+                problemsCategoryTabFragment.arguments = bundle
+            }
+            return problemsCategoryTabFragment
+        }
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        if (arguments?.containsKey(ARG_PROBLEMS_CATEGORY) == true) {
+            val categories: ArrayList<ProblemCategory> = arguments?.getSerializable(ARG_PROBLEMS_CATEGORY) as ArrayList<ProblemCategory>
+
+            category1_title.text = categories[0].title
+            category2_title.text = categories[1].title
+            category3_title.text = categories[2].title
+        }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

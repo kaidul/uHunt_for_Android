@@ -26,7 +26,7 @@ import org.onlinejudge.uhunt.base.BaseViewModel
 import org.onlinejudge.uhunt.data.network.model.ProblemCategory
 
 class CPBookViewModel(application: Application) : BaseViewModel(application) {
-    fun getCPBookProblems(): LiveData<List<ProblemCategory>> {
+    fun getCPBookProblems(): LiveData<ArrayList<ProblemCategory>> {
         return uvaRepository.getCPBookProblems()
     }
 }

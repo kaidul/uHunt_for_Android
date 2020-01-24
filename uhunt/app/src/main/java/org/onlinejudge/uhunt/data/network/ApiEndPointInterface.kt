@@ -35,5 +35,5 @@ interface ApiEndPointInterface {
     fun getUserSubmissions(@Path(CommonUtils.USER_ID_PARAM) userId: String): Call<UserSubmission>
 
     @GET(CommonUtils.CP_BOOK_PROBLEMS_URL)
-    fun getCPBookProblems(): Call<List<ProblemCategory>>
+    fun getCPBookProblems(): Call<ArrayList<ProblemCategory>>
 }
