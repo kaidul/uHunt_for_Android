@@ -39,7 +39,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabIconTintMode="multiply"
-        app:tabIndicatorColor="@color/uva_color"/>
+        app:tabIndicatorColor="@color/uva_color">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/basics_icon"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/intermediate_icon"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/advanced_icon"/>
+
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/tabsViewPager"
