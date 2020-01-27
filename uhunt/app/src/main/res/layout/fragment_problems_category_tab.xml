@@ -22,6 +22,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".cpbook.ProblemsCategoryTabFragment"
     android:background="@color/light_gray"
     android:padding="16dp">
@@ -36,38 +37,47 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:padding="@dimen/padding_medium"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/category1_sub_items"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:nestedScrollingEnabled="false" />
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
         <TextView
             android:id="@+id/category2_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:padding="@dimen/padding_medium"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/category2_sub_items"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:nestedScrollingEnabled="false" />
+            android:nestedScrollingEnabled="false"
+            android:background="@color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
         <TextView
             android:id="@+id/category3_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:padding="@dimen/padding_medium"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/category3_sub_items"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:nestedScrollingEnabled="false" />
+            android:nestedScrollingEnabled="false"
+            android:background="@color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

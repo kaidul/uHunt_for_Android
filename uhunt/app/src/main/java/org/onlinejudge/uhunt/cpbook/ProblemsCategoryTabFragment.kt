@@ -26,6 +26,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DividerItemDecoration
 import kotlinx.android.synthetic.main.fragment_problems_category_tab.*
 
 import org.onlinejudge.uhunt.R
@@ -55,8 +56,16 @@ class ProblemsCategoryTabFragment : Fragment() {
             val categories: ArrayList<ProblemCategory> = arguments?.getSerializable(ARG_PROBLEMS_CATEGORY) as ArrayList<ProblemCategory>
 
             category1_title.text = categories[0].title
+            category1_sub_items.adapter = ProblemSubCategoryRecyclerAdapter(categories[0].arr)
+            category1_sub_items.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+
             category2_title.text = categories[1].title
+            category2_sub_items.adapter = ProblemSubCategoryRecyclerAdapter(categories[1].arr)
+            category2_sub_items.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+
             category3_title.text = categories[2].title
+            category3_sub_items.adapter = ProblemSubCategoryRecyclerAdapter(categories[2].arr)
+            category3_sub_items.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }
     }
 
