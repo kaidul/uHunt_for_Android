@@ -6,7 +6,7 @@ import java.io.Serializable
 data class ProblemCategory(
 
 	@field:SerializedName("arr")
-	val arr: ArrayList<ProblemSubCategory?>? = null,
+	val arr: ArrayList<ProblemSubCategory>,
 
 	@field:SerializedName("title")
 	val title: String? = null
